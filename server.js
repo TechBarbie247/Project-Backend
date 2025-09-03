@@ -13,6 +13,6 @@ app.use(express.urlencoded({extended: true}));
 app.use('/api', require("./routes/api"));
  
 db.once ("open", () => {
-  app.listen(PORT, () =>  console.log('Server running on http://localhost:${PORT}'));
+  app.listen(PORT, () =>  console.log(`Server running on http://localhost:${PORT}`));
 });
 
